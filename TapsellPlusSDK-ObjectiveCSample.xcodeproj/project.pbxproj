@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		111BDC9222D29C6700B5211F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111BDC9122D29C6700B5211F /* Assets.xcassets */; };
 		111BDC9522D29C6700B5211F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111BDC9322D29C6700B5211F /* LaunchScreen.storyboard */; };
 		111BDC9822D29C6700B5211F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 111BDC9722D29C6700B5211F /* main.m */; };
+		E0D65FD677414B7EE4DECC70 /* Pods_TapsellPlusSDK_ObjectiveCSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D31DCC151ED3B2B221597F /* Pods_TapsellPlusSDK_ObjectiveCSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		111BDC9422D29C6700B5211F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		111BDC9622D29C6700B5211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		111BDC9722D29C6700B5211F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4364B3F894A73254C26614EB /* Pods-TapsellPlusSDK-ObjectiveCSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapsellPlusSDK-ObjectiveCSample.release.xcconfig"; path = "Target Support Files/Pods-TapsellPlusSDK-ObjectiveCSample/Pods-TapsellPlusSDK-ObjectiveCSample.release.xcconfig"; sourceTree = "<group>"; };
+		950EF531E919C383D9A2F423 /* Pods-TapsellPlusSDK-ObjectiveCSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapsellPlusSDK-ObjectiveCSample.debug.xcconfig"; path = "Target Support Files/Pods-TapsellPlusSDK-ObjectiveCSample/Pods-TapsellPlusSDK-ObjectiveCSample.debug.xcconfig"; sourceTree = "<group>"; };
+		C3D31DCC151ED3B2B221597F /* Pods_TapsellPlusSDK_ObjectiveCSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapsellPlusSDK_ObjectiveCSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0D65FD677414B7EE4DECC70 /* Pods_TapsellPlusSDK_ObjectiveCSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				111BDC8722D29C6300B5211F /* TapsellPlusSDK-ObjectiveCSample */,
 				111BDC8622D29C6300B5211F /* Products */,
+				AF6E783C228B61CA0A4DED97 /* Pods */,
+				F8C65A87876E363D28DFD488 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,23 @@
 			path = "TapsellPlusSDK-ObjectiveCSample";
 			sourceTree = "<group>";
 		};
+		AF6E783C228B61CA0A4DED97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				950EF531E919C383D9A2F423 /* Pods-TapsellPlusSDK-ObjectiveCSample.debug.xcconfig */,
+				4364B3F894A73254C26614EB /* Pods-TapsellPlusSDK-ObjectiveCSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F8C65A87876E363D28DFD488 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3D31DCC151ED3B2B221597F /* Pods_TapsellPlusSDK_ObjectiveCSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 111BDC9B22D29C6700B5211F /* Build configuration list for PBXNativeTarget "TapsellPlusSDK-ObjectiveCSample" */;
 			buildPhases = (
+				276F51EC66651A8A226976FE /* [CP] Check Pods Manifest.lock */,
 				111BDC8122D29C6300B5211F /* Sources */,
 				111BDC8222D29C6300B5211F /* Frameworks */,
 				111BDC8322D29C6300B5211F /* Resources */,
+				66C5624A67F74C5E2653F4BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		276F51EC66651A8A226976FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TapsellPlusSDK-ObjectiveCSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66C5624A67F74C5E2653F4BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TapsellPlusSDK-ObjectiveCSample/Pods-TapsellPlusSDK-ObjectiveCSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TapsellPlusSDK-ObjectiveCSample/Pods-TapsellPlusSDK-ObjectiveCSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TapsellPlusSDK-ObjectiveCSample/Pods-TapsellPlusSDK-ObjectiveCSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		111BDC8122D29C6300B5211F /* Sources */ = {
@@ -283,32 +351,44 @@
 		};
 		111BDC9C22D29C6700B5211F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 950EF531E919C383D9A2F423 /* Pods-TapsellPlusSDK-ObjectiveCSample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22N5BV2JXC;
 				INFOPLIST_FILE = "TapsellPlusSDK-ObjectiveCSample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ir.tapsell.TapsellPlusSDK-ObjectiveCSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		111BDC9D22D29C6700B5211F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4364B3F894A73254C26614EB /* Pods-TapsellPlusSDK-ObjectiveCSample.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22N5BV2JXC;
 				INFOPLIST_FILE = "TapsellPlusSDK-ObjectiveCSample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ir.tapsell.TapsellPlusSDK-ObjectiveCSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

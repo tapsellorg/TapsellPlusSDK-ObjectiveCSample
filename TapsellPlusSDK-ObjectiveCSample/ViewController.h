@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@import TapsellPlus;
+@import TapsellPlusTapsellAdapter;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController < TapsellPlusRequestAdDelegate ,
+    TapsellPlusShowAdDelegate , TapsellPlusBannerDelegate , TapsellPlusNativeBannerDelegate >
 
 
 @end
