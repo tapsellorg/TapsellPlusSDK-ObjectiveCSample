@@ -29,7 +29,7 @@ DEPENDENCIES:
   - TapsellPlusSDK (= 1.2.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - ChartboostSDK
     - Google-Mobile-Ads-SDK
     - TapsellPlusSDK
@@ -43,6 +43,6 @@ SPEC CHECKSUMS:
   TapsellSDKv3: 48c1e8ac0f2ab9054d78a8763e4335ab59702e1d
   UnityAds: ff7c0f477873f40daccd7c0bd0b656cb6cf5a2e5
 
-PODFILE CHECKSUM: 66d4b434ac80f95dd607a93974bd3de4caf71244
+PODFILE CHECKSUM: c63599019d4b7edb26f623bbda6267ad82a77453
 
-COCOAPODS: 1.7.3
+COCOAPODS: 1.8.3
