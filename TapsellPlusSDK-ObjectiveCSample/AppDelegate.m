@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [TapsellPlus initialize:@"qqmrbpaitpqkebqnqcisfmgpffnonkipcoksmfibqqgfigdjtbtlplhebbqdlljcsktafg"];
+    [TapsellPlus initialize:@"ksqkhlcpkpqgnfcckrpohrqtdkofeegamsjogboqbbqghfaielnpnaskbhgreraatirnar"];
     [TapsellPlus setDebugMode:0];
     
     return YES;

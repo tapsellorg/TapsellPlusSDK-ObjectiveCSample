@@ -11,47 +11,26 @@
 @interface ViewController ()
     @property (weak, nonatomic) IBOutlet TapsellPlusNativeBannerView *nativeBannerView;
     @property (weak, nonatomic) IBOutlet TapsellPlusBannerView *bannerView;
-    @property (weak, nonatomic) IBOutlet TapsellPlusBannerView *bannerView2;
     
     @end
 
 @implementation ViewController
     
-    NSString* interstitialBanner1Id   = @"5d2209532cf21e0001a90c79"; //tapsell
-    NSString* interstitialBanner2Id   = @"5d220b2155028c0001e810af"; //admob
-    NSString* rewardedVideo1Id        = @"5d2207582cf21e0001a90c78"; //tapsell
-    NSString* rewardedVideo2Id        = @"5d2207bc55028c0001e810ae"; //admob
-    NSString* rewardedVideo3Id        = @"5d230bc36b8bf10001a96d5c"; //unityads
-    NSString* rewardedVideo4Id        = @"5d230c2e6b8bf10001a96d5d"; //chartboost
-    NSString* nativeBannerId          = @"5d220b3b55028c0001e810b0"; //tapsell
-    NSString* banner1Id               = @"5d220b5655028c0001e810b1"; //tapsell
-    NSString* banner2Id               = @"5d220bd32cf21e0001a90c7a"; //admob
+    NSString* interstitialBannerId   = @"5e3915c0a609650001935c90"; //tapsell
+    NSString* rewardedVideoId        = @"5e3917754535200001dee755"; //tapsell
+    NSString* nativeBannerId         = @"5e39173d4535200001dee754"; //tapsell
+    NSString* bannerId               = @"5e391757a609650001935c93"; //tapsell
 
-- (IBAction)getInterstitialBanner1:(UIButton *)sender {
-    [TapsellPlus requestInterstitialAd:interstitialBanner1Id :self];
-}
-- (IBAction)getInterstitialBanner2:(UIButton *)sender {
-    [TapsellPlus requestInterstitialAd:interstitialBanner2Id :self];
+- (IBAction)getInterstitialBanner:(UIButton *)sender {
+    [TapsellPlus requestInterstitialAd:interstitialBannerId :self];
 }
     
-- (IBAction)getRewardedVideo1:(UIButton *)sender {
-    [TapsellPlus requestRewardedVideoAd:rewardedVideo1Id :self];
-}
-- (IBAction)getRewardedVideo2:(UIButton *)sender {
-    [TapsellPlus requestRewardedVideoAd:rewardedVideo2Id :self];
-}
-- (IBAction)getRewardedVideo3:(UIButton *)sender {
-    [TapsellPlus requestRewardedVideoAd:rewardedVideo3Id :self];
-}
-- (IBAction)getRewardedVideo4:(UIButton *)sender {
-    [TapsellPlus requestRewardedVideoAd:rewardedVideo4Id :self];
+- (IBAction)getRewardedVideo:(UIButton *)sender {
+    [TapsellPlus requestRewardedVideoAd:rewardedVideoId :self];
 }
 
-- (IBAction)getBanner1:(UIButton *)sender {
-    [TapsellPlus requestBannerAd:banner1Id :_bannerView :self];
-}
-- (IBAction)getBanner2:(UIButton *)sender {
-    [TapsellPlus requestBannerAd:banner2Id :_bannerView2 :self];
+- (IBAction)getBanner:(UIButton *)sender {
+    [TapsellPlus requestBannerAd:bannerId :_bannerView :self];
 }
 
 - (IBAction)getNativeBanner:(UIButton *)sender {
@@ -72,9 +51,6 @@
     
     _bannerView.size = TapsellPlusBannerSizeW320H50;
     _bannerView.rootControlView = self;
-    
-    _bannerView2.size = TapsellPlusBannerSizeW320H50;
-    _bannerView2.rootControlView = self;
     
 }
 
@@ -107,4 +83,5 @@
     _nativeBannerView.hidden = NO;
 }
     
-    @end
+
+@end

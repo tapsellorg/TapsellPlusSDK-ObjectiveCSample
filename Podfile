@@ -6,6 +6,6 @@ target 'TapsellPlusSDK-ObjectiveCSample' do
   use_frameworks!
 
   # Pods for TapsellPlusSDK-ObjectiveCSample
-  pod 'TapsellPlusSDK', '1.3.0'
+  pod 'TapsellPlusSDK', '1.4.0'
 
 end

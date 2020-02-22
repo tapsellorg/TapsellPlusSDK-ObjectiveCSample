@@ -1,32 +1,32 @@
 PODS:
   - ChartboostSDK (7.3.0)
   - Google-Mobile-Ads-SDK (7.38.0)
-  - TapsellPlusSDK (1.2.0):
-    - TapsellPlusSDK/Default (= 1.2.0)
-  - TapsellPlusSDK/AdMobAdapter (1.2.0):
+  - TapsellPlusSDK (1.4.0):
+    - TapsellPlusSDK/Default (= 1.4.0)
+  - TapsellPlusSDK/AdMobAdapter (1.4.0):
     - Google-Mobile-Ads-SDK (= 7.38.0)
-    - TapsellPlusSDK/Core (~> 1.2.0)
-  - TapsellPlusSDK/ChartBoostAdapter (1.2.0):
+    - TapsellPlusSDK/Core (~> 1.4.0)
+  - TapsellPlusSDK/ChartBoostAdapter (1.4.0):
     - ChartboostSDK (= 7.3.0)
-    - TapsellPlusSDK/Core (~> 1.2.0)
-  - TapsellPlusSDK/Core (1.2.0)
-  - TapsellPlusSDK/Default (1.2.0):
-    - TapsellPlusSDK/AdMobAdapter (~> 1.2.0)
-    - TapsellPlusSDK/ChartBoostAdapter (~> 1.2.0)
-    - TapsellPlusSDK/Core (~> 1.2.0)
-    - TapsellPlusSDK/TapsellAdapter (~> 1.2.0)
-    - TapsellPlusSDK/UnityAdsAdapter (~> 1.2.0)
-  - TapsellPlusSDK/TapsellAdapter (1.2.0):
-    - TapsellPlusSDK/Core (~> 1.2.0)
-    - TapsellSDKv3 (= 1.2.0)
-  - TapsellPlusSDK/UnityAdsAdapter (1.2.0):
-    - TapsellPlusSDK/Core (~> 1.2.0)
+    - TapsellPlusSDK/Core (~> 1.4.0)
+  - TapsellPlusSDK/Core (1.4.0)
+  - TapsellPlusSDK/Default (1.4.0):
+    - TapsellPlusSDK/AdMobAdapter (~> 1.4.0)
+    - TapsellPlusSDK/ChartBoostAdapter (~> 1.4.0)
+    - TapsellPlusSDK/Core (~> 1.4.0)
+    - TapsellPlusSDK/TapsellAdapter (~> 1.4.0)
+    - TapsellPlusSDK/UnityAdsAdapter (~> 1.4.0)
+  - TapsellPlusSDK/TapsellAdapter (1.4.0):
+    - TapsellPlusSDK/Core (~> 1.4.0)
+    - TapsellSDKv3 (= 1.3.0)
+  - TapsellPlusSDK/UnityAdsAdapter (1.4.0):
+    - TapsellPlusSDK/Core (~> 1.4.0)
     - UnityAds (= 3.0.0)
-  - TapsellSDKv3 (1.2.0)
+  - TapsellSDKv3 (1.3.0)
   - UnityAds (3.0.0)
 
 DEPENDENCIES:
-  - TapsellPlusSDK (= 1.2.0)
+  - TapsellPlusSDK (= 1.4.0)
 
 SPEC REPOS:
   trunk:
@@ -39,10 +39,10 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   ChartboostSDK: 63bbdcad37dd78012acaba1f904e82ddb0eb921d
   Google-Mobile-Ads-SDK: fec4a72b71a81302d3fd75454df3417c03c50ed5
-  TapsellPlusSDK: f2a2409b7185dfcf1515582ec379704f6aa21510
-  TapsellSDKv3: 48c1e8ac0f2ab9054d78a8763e4335ab59702e1d
+  TapsellPlusSDK: cbfc7bf7e9c1b3e848efe31db3245743a753410a
+  TapsellSDKv3: 56b88e0db3680534b95a9190c1dfad096cbb37d4
   UnityAds: ff7c0f477873f40daccd7c0bd0b656cb6cf5a2e5
 
-PODFILE CHECKSUM: c63599019d4b7edb26f623bbda6267ad82a77453
+PODFILE CHECKSUM: c3ca755fbf99cc7fbea08b79c9d8e77ab94394dd
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.8.4
